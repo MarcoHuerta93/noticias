@@ -4,6 +4,7 @@
                *ngFor="let noticia of noticias; let i = index">
 
      <app-noticia    [indice]="i"
+                      [enFavoritos]="enFavoritos"
                      [noticia]="noticia"></app-noticia>
     </ion-col>
   </ion-row>
