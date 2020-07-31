@@ -3,7 +3,6 @@ import { Article } from '../../interfaces/interfaces';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 import { ActionSheetController } from '@ionic/angular';
 import { SocialSharing } from '@ionic-native/social-sharing/ngx';
-import { IonicStorageModule } from '@ionic/storage';
 import { DataLocalService } from '../../services/data-local.service';
 
 @Component({
@@ -56,7 +55,6 @@ export class NoticiaComponent implements OnInit {
       }
       
     }
-
   }
   const actionSheet = await this.actionSheetController.create({
     // header: 'Options',
